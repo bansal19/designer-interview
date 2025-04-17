@@ -1,0 +1,110 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+
+node_modules/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Ignore node modules
+chrome/node_modules/
+
+# Ignore build output directories
+chrome/dist/
+chrome/build/
+
+# Ignore Webpack cache
+chrome/.webpack/
+chrome/.cache/
+
+# Ignore TypeScript cache and build files
+*.tsbuildinfo
+
+# Ignore environment variable files (if used)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled JavaScript and source maps
+*.js
+*.js.map
+
+# Ignore TypeScript declaration files if generated
+*.d.ts
+
+# Ignore test coverage reports
+coverage/
+*.lcov
+*.lcov.info
+
+# Ignore Chrome extension specific files
+*.pem
+
+# Ignore Webpack bundle analysis report
+report.html
+
+# Ignore compressed output files
+*.gz
+*.br
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore other temporary files
+tmp/
+temp/

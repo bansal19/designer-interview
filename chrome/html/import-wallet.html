@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Import Wallet</title>
+    <style>
+        body {
+            width: 300px;
+            height: 600px;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .input-group textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #1557b0;
+        }
+
+        .error-message {
+            color: #ff4444;
+            margin-top: 8px;
+            display: none;
+        }
+
+        .balance-container {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .balance-label {
+            color: #ccc;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .balance-value {
+            font-size: 24px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Import Wallet</h2>
+            <img src="/assets/crucible.svg" alt="Crucible Labs Logo" class="logo" style="width: 100px;">
+        </div>
+
+        <div class="input-group">
+            <label for="mnemonic-input">Enter your 12-word Recovery Phrase</label>
+            <textarea id="mnemonic-input" placeholder="Enter your mnemonic phrase (12 words separated by spaces)"></textarea>
+            <div id="mnemonic-error" class="error-message">Please enter a valid 12-word mnemonic phrase</div>
+        </div>
+
+        <div class="input-group">
+            <label for="wallet-name-input">Wallet Name</label>
+            <input type="text" id="wallet-name-input" placeholder="Enter a name for your wallet">
+        </div>
+
+        <div class="input-group">
+            <label for="wallet-password-input">Wallet Password</label>
+            <input type="password" id="wallet-password-input" placeholder="Enter a password to encrypt your wallet">
+            <div id="password-error" class="error-message">Password is required</div>
+        </div>
+        <button id="import-wallet-button">Import Wallet</button>
+        <div id="balance-container" class="balance-container" style="display: none;">
+            <div class="balance-label">Balance</div>
+            <div class="balance-value">Loading balance...</div>
+        </div>
+    </div>
+    <script type="module" src="/dist/src/importWallet.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "extends": "@util-crypto/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "..",
+    "outDir": "./build",
+    "rootDir": "./src",
+    "emitDeclarationOnly": false,
+    "noEmit": true
+  },
+  "include": ["**/*.spec.ts"],
+  "references": [
+    {"path": "@util-crypto/keyring/tsconfig.build.json"},
+    {"path": "@util-crypto/util/tsconfig.build.json"},
+    {"path": "@util-crypto/util-crypto/tsconfig.build.json"}
+  ]
+}

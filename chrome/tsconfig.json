@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                        // Target ES6 or higher
+    "module": "ES2020",                      // Use ESNext for module resolution
+    "lib": ["dom", "es6"],                    // Only include web types
+    "moduleResolution": "node",              // Resolve modules like Node.js
+    "strict": true,                          // Enable all strict type-checking options
+    "esModuleInterop": true,                 // Ensure compatibility with CommonJS
+    "outDir": "./dist",                        // Output directory for compiled files
+    "baseUrl": "./",                      // Base directory for resolving paths
+    "paths": {
+        "@util-crypto/*": ["packages/util-crypto/*"]  // Alias for util-crypto package    
+    },
+    
+  },
+  "include": [
+    "src/**/*",                               // Include all TypeScript files in the `src/` folder
+    "packages/**/*",                           // Include all TypeScript files in the `packages/` folder
+  ],
+  "exclude": [
+    "node_modules",                          // Exclude node_modules to prevent compilation of dependencies
+    "dist",                                   // Exclude the output directory from being included
+    "packages/util-crypto/src/**/*.spec.ts",
+    "packages/util-crypto/src/test",
+    "packages/util-crypto/keyring/src/test",
+  ]
+}

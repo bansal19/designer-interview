@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Crucible Wallet",
+  "version": "1.0",
+  "description": "A Chrome extension wallet.",
+  "action": {
+    "default_popup": "./html/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/src/popup.js", "dist/src/background.js", "dist/src/createWallet.js", "dist/src/importWallet.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "dist/src/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/crucible.svg"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
