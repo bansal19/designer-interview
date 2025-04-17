@@ -4,6 +4,8 @@ This repository contains a Chrome extension wallet implementation that serves as
 
 ## Getting Started
 
+### Running the Chrome Extension
+
 To run the chrome extension, first download all the dependencies by running 
 ```
 npm install
@@ -23,6 +25,13 @@ The current implementation has three screens that need design and implementation
 - `import-wallet.html`
 - `create-wallet.html`
 
+Consider these 3 screens as core to the user flow. Let the current screens act as a starting point for you to understand how the application backend functions.
+
+### Time Expectations
+We expect this task to take approximately 2.5-3.5 hours total:
+- Design: ~1.5 hours
+- Implementation: 1-2 hours
+
 ### Requirements
 
 1. **Design Phase**
@@ -30,6 +39,7 @@ The current implementation has three screens that need design and implementation
    - Focus on creating a modern, user-friendly interface
    - Consider the Chrome extension context and constraints
    - Feel free to use any design system or UI kit you're comfortable with
+   - Note: We're not evaluating the design itself - this is just to help you plan your implementation. Focus on creating a functional design that you can implement quickly.
 
 2. **Implementation Phase**
    - Re-implement the screens using your preferred framework (React, Vue, Svelte, etc.)
@@ -39,6 +49,7 @@ The current implementation has three screens that need design and implementation
      - Generate a new wallet
      - Import/Regenerate an existing wallet
    - Implement a back button to return to the main screen from both secondary screens
+   - Note: This is the main focus of the evaluation - we're looking at your ability to implement a working frontend that integrates with the existing backend
 
 ### Stretch Goals
 
@@ -63,7 +74,6 @@ Feel free to use any tools, libraries, or frameworks that help you create the be
 - Design: Figma, Adobe XD, Sketch, or any other design tool
 - Frontend: React, Vue, Svelte, or any other framework
 - AI: ChatGPT, Claude, Loveable, v0, etc! 
-
 
 ### Good luck! 
 We're excited to see what you create and how you approach this challenge :) 
