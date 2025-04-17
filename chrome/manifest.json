@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Crucible Wallet",
+  "name": "Design Engineer Interview",
   "version": "1.0",
   "description": "A Chrome extension wallet.",
   "action": {
